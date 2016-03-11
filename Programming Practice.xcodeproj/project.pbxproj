@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		873496801C92F29C00457A3D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8734967F1C92F29C00457A3D /* main.cpp */; };
-		873496881C92F40300457A3D /* BNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 873496861C92F40300457A3D /* BNode.cpp */; };
+		87234B331C93127D0050944B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8734967F1C92F29C00457A3D /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +25,11 @@
 /* Begin PBXFileReference section */
 		8734967C1C92F29C00457A3D /* Programming Practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Programming Practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8734967F1C92F29C00457A3D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		873496861C92F40300457A3D /* BNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BNode.cpp; sourceTree = "<group>"; };
 		873496871C92F40300457A3D /* BNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BNode.hpp; sourceTree = "<group>"; };
+		8734968E1C92F8D300457A3D /* Problem1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem1.hpp; sourceTree = "<group>"; };
+		873496911C92F96100457A3D /* Problem2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem2.hpp; sourceTree = "<group>"; };
+		873496941C92FC7C00457A3D /* Problem3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem3.hpp; sourceTree = "<group>"; };
+		873496971C92FE1700457A3D /* Problem4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem4.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				8734967F1C92F29C00457A3D /* main.cpp */,
-				873496861C92F40300457A3D /* BNode.cpp */,
 				873496871C92F40300457A3D /* BNode.hpp */,
+				8734968E1C92F8D300457A3D /* Problem1.hpp */,
+				873496911C92F96100457A3D /* Problem2.hpp */,
+				873496941C92FC7C00457A3D /* Problem3.hpp */,
+				873496971C92FE1700457A3D /* Problem4.hpp */,
 			);
 			path = "Programming Practice";
 			sourceTree = "<group>";
@@ -102,7 +107,7 @@
 				};
 			};
 			buildConfigurationList = 873496771C92F29C00457A3D /* Build configuration list for PBXProject "Programming Practice" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -123,8 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873496881C92F40300457A3D /* BNode.cpp in Sources */,
-				873496801C92F29C00457A3D /* main.cpp in Sources */,
+				87234B331C93127D0050944B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +139,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -143,6 +148,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -179,6 +185,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -187,6 +194,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -215,6 +223,9 @@
 		873496841C92F29C00457A3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -222,6 +233,9 @@
 		873496851C92F29C00457A3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -245,6 +259,7 @@
 				873496851C92F29C00457A3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
