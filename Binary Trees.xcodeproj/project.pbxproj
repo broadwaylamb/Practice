@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		870282CB1C9C26B200FE1C61 /* PerformTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870282C91C9C26B200FE1C61 /* PerformTest.cpp */; };
 		87234B331C93127D0050944B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8734967F1C92F29C00457A3D /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		870282C91C9C26B200FE1C61 /* PerformTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerformTest.cpp; sourceTree = "<group>"; };
+		870282CA1C9C26B200FE1C61 /* PerformTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PerformTest.hpp; sourceTree = "<group>"; };
+		870282D01C9C30B900FE1C61 /* Problem5.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem5.hpp; sourceTree = "<group>"; };
+		870282D31C9C33F800FE1C61 /* Problem6.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem6.hpp; sourceTree = "<group>"; };
+		870282D61C9C370200FE1C61 /* Problem7.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem7.hpp; sourceTree = "<group>"; };
+		870282D91C9C404400FE1C61 /* Problem8.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem8.hpp; sourceTree = "<group>"; };
 		8734967C1C92F29C00457A3D /* Programming Practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Programming Practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8734967F1C92F29C00457A3D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		873496871C92F40300457A3D /* BNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BNode.hpp; sourceTree = "<group>"; };
@@ -64,10 +71,16 @@
 			children = (
 				8734967F1C92F29C00457A3D /* main.cpp */,
 				873496871C92F40300457A3D /* BNode.hpp */,
+				870282C91C9C26B200FE1C61 /* PerformTest.cpp */,
+				870282CA1C9C26B200FE1C61 /* PerformTest.hpp */,
 				8734968E1C92F8D300457A3D /* Problem1.hpp */,
 				873496911C92F96100457A3D /* Problem2.hpp */,
 				873496941C92FC7C00457A3D /* Problem3.hpp */,
 				873496971C92FE1700457A3D /* Problem4.hpp */,
+				870282D01C9C30B900FE1C61 /* Problem5.hpp */,
+				870282D31C9C33F800FE1C61 /* Problem6.hpp */,
+				870282D61C9C370200FE1C61 /* Problem7.hpp */,
+				870282D91C9C404400FE1C61 /* Problem8.hpp */,
 			);
 			path = "Programming Practice";
 			sourceTree = "<group>";
@@ -106,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 873496771C92F29C00457A3D /* Build configuration list for PBXProject "Programming Practice" */;
+			buildConfigurationList = 873496771C92F29C00457A3D /* Build configuration list for PBXProject "Binary Trees" */;
 			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -129,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87234B331C93127D0050944B /* main.cpp in Sources */,
+				870282CB1C9C26B200FE1C61 /* PerformTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +257,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		873496771C92F29C00457A3D /* Build configuration list for PBXProject "Programming Practice" */ = {
+		873496771C92F29C00457A3D /* Build configuration list for PBXProject "Binary Trees" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				873496811C92F29C00457A3D /* Debug */,

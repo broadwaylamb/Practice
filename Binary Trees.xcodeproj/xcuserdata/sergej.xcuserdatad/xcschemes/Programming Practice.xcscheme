@@ -18,7 +18,7 @@
                BlueprintIdentifier = "8734967B1C92F29C00457A3D"
                BuildableName = "Programming Practice"
                BlueprintName = "Programming Practice"
-               ReferencedContainer = "container:Programming Practice.xcodeproj">
+               ReferencedContainer = "container:Binary Trees.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,7 +36,7 @@
             BlueprintIdentifier = "8734967B1C92F29C00457A3D"
             BuildableName = "Programming Practice"
             BlueprintName = "Programming Practice"
-            ReferencedContainer = "container:Programming Practice.xcodeproj">
+            ReferencedContainer = "container:Binary Trees.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -59,7 +59,7 @@
             BlueprintIdentifier = "8734967B1C92F29C00457A3D"
             BuildableName = "Programming Practice"
             BlueprintName = "Programming Practice"
-            ReferencedContainer = "container:Programming Practice.xcodeproj">
+            ReferencedContainer = "container:Binary Trees.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "8734967B1C92F29C00457A3D"
             BuildableName = "Programming Practice"
             BlueprintName = "Programming Practice"
-            ReferencedContainer = "container:Programming Practice.xcodeproj">
+            ReferencedContainer = "container:Binary Trees.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

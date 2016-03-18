@@ -6,72 +6,36 @@
 //  Copyright © 2016 Sergej Jaskiewicz. All rights reserved.
 //
 
-#include "BNode.hpp"
-
-#include "Problem1.hpp"
-#include "Problem2.hpp"
-#include "Problem3.hpp"
-#include "Problem4.hpp"
+#include <string>
+#include "PerformTest.hpp"
 
 using namespace std;
 
-void problemHeader(int problemNumber) {
-    cout<<"Problem "<<problemNumber<<" solution:"<<endl<<endl;
-}
-void problemFooter() {
-    cout<<endl<<"--------"<<endl<<endl;
-}
-
 int main() {
     
-    BNode<int> *tree = new BNode<int>(1,
-                                       new BNode<int>(2,
-                                                      new BNode<int>(4),
-                                                      new BNode<int>(5)),
-                                       new BNode<int>(3,
-                                                      new BNode<int>(6)));
+    string input;
+    int n = 0;
     
-    // MARK: Problem 1
-    problemHeader(1);
-    
-    printTree(tree);
-    cout<<endl<<"The rightmost grandchild of the tree is: "<<rightmostGrandchild(tree) -> data;
-    
-    problemFooter();
-    
-    // MARK: Problem 2
-    problemHeader(2);
-    
-    printTree(tree);
-    cout<<endl<<"The number of grandchildren of the root is: "<<countGrandchildren(tree);
-    
-    problemFooter();
-    
-    // MARK: Problem 3
-    problemHeader(3);
-    
-    BNode<int> *tree1 = new BNode<int>(1,
-                                       new BNode<int>(2,
-                                                      new BNode<int>(3),
-                                                      new BNode<int>(4)));
-    printTree(tree1);
-    replaceRootWithLeftSon(tree1);
-    cout<<endl<<"The new tree:"<<endl<<endl;
-    printTree(tree1);
-    
-    problemFooter();
-    
-    // MARK: Problem 4
-    problemHeader(4);
-    
-    printTree(tree1);
-    insertNewRootWithData(tree1, 1);
-    cout<<endl<<"The new tree:"<<endl<<endl;
-    printTree(tree1);
-    
-    problemFooter();
-    
-    // MARK: Problem 5
+    while (true) {
+        cout<<"Enter a number of the problem you want to test:"<<endl;
+        cin>>input;
+        try {
+            n = stoi(input);
+            performTest(n);
+        } catch (const invalid_argument) {
+            n = 0;
+            cerr<<"You're supposed to enter a number of the problem."<<endl;
+        }
+        while (true) {
+            cout<<"Proceed? (Y/n)"<<endl;
+            cin>>input;
+            if (input == "Y" || input == "y") {
+                break;
+            } else if (input == "N" || input == "n") {
+                return 0;
+            }
+        }
+    }
     
     return 0;
 }
