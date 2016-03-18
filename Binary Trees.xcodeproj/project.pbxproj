@@ -53,7 +53,7 @@
 		873496731C92F29C00457A3D = {
 			isa = PBXGroup;
 			children = (
-				8734967E1C92F29C00457A3D /* Programming Practice */,
+				8734967E1C92F29C00457A3D /* Binary Trees */,
 				8734967D1C92F29C00457A3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,7 +66,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8734967E1C92F29C00457A3D /* Programming Practice */ = {
+		8734967E1C92F29C00457A3D /* Binary Trees */ = {
 			isa = PBXGroup;
 			children = (
 				8734967F1C92F29C00457A3D /* main.cpp */,
@@ -82,7 +82,7 @@
 				870282D61C9C370200FE1C61 /* Problem7.hpp */,
 				870282D91C9C404400FE1C61 /* Problem8.hpp */,
 			);
-			path = "Programming Practice";
+			path = "Binary Trees";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
