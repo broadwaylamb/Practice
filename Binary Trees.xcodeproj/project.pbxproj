@@ -30,6 +30,12 @@
 		870282D31C9C33F800FE1C61 /* Problem6.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem6.hpp; sourceTree = "<group>"; };
 		870282D61C9C370200FE1C61 /* Problem7.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem7.hpp; sourceTree = "<group>"; };
 		870282D91C9C404400FE1C61 /* Problem8.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem8.hpp; sourceTree = "<group>"; };
+		871E60BD1CA03CDD004724A6 /* Problem9.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem9.hpp; sourceTree = "<group>"; };
+		871E60C01CA03F1C004724A6 /* Problem10.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem10.hpp; sourceTree = "<group>"; };
+		871E60C31CA051CF004724A6 /* Problem11.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem11.hpp; sourceTree = "<group>"; };
+		871E60C61CA054C6004724A6 /* Problem12.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem12.hpp; sourceTree = "<group>"; };
+		871E60C91CA05797004724A6 /* Problem13.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem13.hpp; sourceTree = "<group>"; };
+		871E60CC1CA058F6004724A6 /* Problem14.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem14.hpp; sourceTree = "<group>"; };
 		8734967C1C92F29C00457A3D /* Programming Practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Programming Practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8734967F1C92F29C00457A3D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		873496871C92F40300457A3D /* BNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BNode.hpp; sourceTree = "<group>"; };
@@ -81,6 +87,12 @@
 				870282D31C9C33F800FE1C61 /* Problem6.hpp */,
 				870282D61C9C370200FE1C61 /* Problem7.hpp */,
 				870282D91C9C404400FE1C61 /* Problem8.hpp */,
+				871E60BD1CA03CDD004724A6 /* Problem9.hpp */,
+				871E60C01CA03F1C004724A6 /* Problem10.hpp */,
+				871E60C31CA051CF004724A6 /* Problem11.hpp */,
+				871E60C61CA054C6004724A6 /* Problem12.hpp */,
+				871E60C91CA05797004724A6 /* Problem13.hpp */,
+				871E60CC1CA058F6004724A6 /* Problem14.hpp */,
 			);
 			path = "Binary Trees";
 			sourceTree = "<group>";

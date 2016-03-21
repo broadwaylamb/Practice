@@ -18,6 +18,12 @@
 #include "Problem6.hpp"
 #include "Problem7.hpp"
 #include "Problem8.hpp"
+#include "Problem9.hpp"
+#include "Problem10.hpp"
+#include "Problem11.hpp"
+#include "Problem12.hpp"
+#include "Problem13.hpp"
+#include "Problem14.hpp"
 
 void performTest(int problemNumber);
 

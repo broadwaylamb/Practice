@@ -13,7 +13,7 @@
 #ifndef Problem8_hpp
 #define Problem8_hpp
 
-#include <stdio.h>
+#include "BNode.hpp"
 
 template <class T>
 void leftRotation(BNode<T> *&root) {
