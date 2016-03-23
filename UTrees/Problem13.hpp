@@ -1,6 +1,6 @@
 //
 //  Problem13.hpp
-//  Binary Trees
+//  U-Trees
 //
 //  Created by Sergej Jaskiewicz on 21.03.16.
 //  Copyright © 2016 Sergej Jaskiewicz. All rights reserved.
@@ -14,7 +14,6 @@
 #define Problem13_hpp
 
 #include "BNode.hpp"
-#include "Problem9.hpp"
 
 template <class T>
 void insertLeftChildForLeftmostNode(BNode<T> *&root, T data) {

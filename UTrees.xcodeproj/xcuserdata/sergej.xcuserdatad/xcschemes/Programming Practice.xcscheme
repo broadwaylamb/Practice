@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8734967B1C92F29C00457A3D"
-               BuildableName = "Binary Trees"
-               BlueprintName = "Binary Trees"
-               ReferencedContainer = "container:Binary Trees.xcodeproj">
+               BuildableName = "UTrees"
+               BlueprintName = "UTrees"
+               ReferencedContainer = "container:UTrees.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8734967B1C92F29C00457A3D"
-            BuildableName = "Binary Trees"
-            BlueprintName = "Binary Trees"
-            ReferencedContainer = "container:Binary Trees.xcodeproj">
+            BuildableName = "UTrees"
+            BlueprintName = "UTrees"
+            ReferencedContainer = "container:UTrees.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8734967B1C92F29C00457A3D"
-            BuildableName = "Binary Trees"
-            BlueprintName = "Binary Trees"
-            ReferencedContainer = "container:Binary Trees.xcodeproj">
+            BuildableName = "UTrees"
+            BlueprintName = "UTrees"
+            ReferencedContainer = "container:UTrees.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8734967B1C92F29C00457A3D"
-            BuildableName = "Binary Trees"
-            BlueprintName = "Binary Trees"
-            ReferencedContainer = "container:Binary Trees.xcodeproj">
+            BuildableName = "UTrees"
+            BlueprintName = "UTrees"
+            ReferencedContainer = "container:UTrees.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

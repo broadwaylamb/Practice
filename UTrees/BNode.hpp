@@ -1,21 +1,24 @@
 //
 //  BNode.hpp
-//  Programming Practice
+//  U-Trees
 //
 //  Created by Sergej Jaskiewicz on 11.03.16.
 //  Copyright © 2016 Sergej Jaskiewicz. All rights reserved.
 //
 
-#include <iostream>
-
 #ifndef BNode_hpp
 #define BNode_hpp
+
+#include <iostream>
 
 template <class T>
 struct BNode {
     T data;
-    BNode<T> *left, *right;
-    BNode(T dd, BNode<T> *l = nullptr, BNode<T> *r = nullptr): data(dd), left(l), right(r) {}
+    BNode<T> *left, *right, *up = nullptr;
+    BNode(T dd, BNode<T> *l = nullptr, BNode<T> *r = nullptr): data(dd), left(l), right(r) {
+        if(l) l -> up = this;
+        if(r) r -> up = this;
+    }
 };
 
 template<class T>

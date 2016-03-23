@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Programming Practice
+//  U-Trees
 //
 //  Created by Sergej Jaskiewicz on 11.03.16.
 //  Copyright © 2016 Sergej Jaskiewicz. All rights reserved.
@@ -36,6 +36,6 @@ int main() {
             }
         }
     }
-    
+
     return 0;
 }

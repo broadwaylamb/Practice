@@ -1,6 +1,6 @@
 //
 //  Problem14.hpp
-//  Binary Trees
+//  U-Trees
 //
 //  Created by Sergej Jaskiewicz on 21.03.16.
 //  Copyright © 2016 Sergej Jaskiewicz. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  Problem6.hpp
-//  Programming Practice
+//  U-Trees
 //
 //  Created by Sergej Jaskiewicz on 18.03.16.
 //  Copyright © 2016 Sergej Jaskiewicz. All rights reserved.

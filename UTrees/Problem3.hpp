@@ -1,15 +1,13 @@
 //
 //  Problem3.hpp
-//  Programming Practice
+//  U-Trees
 //
 //  Created by Sergej Jaskiewicz on 11.03.16.
 //  Copyright © 2016 Sergej Jaskiewicz. All rights reserved.
 //
 
 /*
- *
  * Написать функцию, удаляющую корень дерева, в предположении, что у него нет правого сына, и левый сын становится новым корнем дерева.
- *
  */
 
 #include "BNode.hpp"
@@ -21,6 +19,7 @@ template <class T>
 void replaceRootWithLeftSon(BNode<T> *&root) {
     if (root == nullptr || root -> right != nullptr) return;
     BNode<T> *leftChild = root -> left;
+    leftChild -> up = root -> up;
     delete root;
     root = leftChild;
 }

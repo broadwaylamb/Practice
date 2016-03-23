@@ -1,6 +1,6 @@
 //
 //  Problem15.hpp
-//  Binary Trees
+//  U-Trees
 //
 //  Created by Sergej Jaskiewicz on 23.03.16.
 //  Copyright © 2016 Sergej Jaskiewicz. All rights reserved.
@@ -14,7 +14,6 @@
 #define Problem15_hpp
 
 #include "BNode.hpp"
-#include "Problem11.hpp"
 
 template <class T>
 BNode<T>* leftmostLeafParent(BNode<T> *root) {
