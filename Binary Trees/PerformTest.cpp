@@ -162,8 +162,8 @@ void performTest(int problemNumber) {
                                                              new BNode<int>(5)));
             
             printTree(tree);
-            
-            cout<<"The leftmost node of the tree is: "<<leftmostNode(tree) -> data<<endl;
+        
+            cout<<"The leftmost node of the tree is: "<<(*leftmostNode(tree)) -> data<<endl;
             
             problemFooter();
             break;
@@ -211,7 +211,7 @@ void performTest(int problemNumber) {
             
             printTree(tree);
             
-            cout<<"The leftmost leaf is: "<<leftmostLeaf(tree) -> data<<endl;
+            cout<<"The leftmost leaf is: "<<(*leftmostLeaf(tree)) -> data<<endl;
             
             problemFooter();
             break;
@@ -275,8 +275,8 @@ void performTest(int problemNumber) {
             
             printTree(tree);
             
-            cout<<endl<<"The leftmost node of the tree is: "<<leftmostNode(tree) -> data<<endl;
-            cout<<leftmostNode(tree) -> right -> data<<endl;
+            cout<<endl<<"The leftmost node of the tree is: "<<(*leftmostNode(tree)) -> data<<endl;
+            cout<<(*leftmostNode(tree)) -> right -> data<<endl;
             
             deleteLeftmostNode(tree);
             
@@ -306,7 +306,7 @@ void performTest(int problemNumber) {
             
             printTree(tree);
             
-            cout<<"The leftmost leaf is: "<<leftmostLeaf(tree) -> data<<endl;
+            cout<<"The leftmost leaf is: "<<(*leftmostLeaf(tree)) -> data<<endl;
             
             deleteLeftmostLeaf(tree);
             

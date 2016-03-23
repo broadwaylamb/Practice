@@ -16,8 +16,8 @@
 #include "BNode.hpp"
 
 template <class T>
-BNode<T>* leftmostNode(BNode<T> *root) {
-    if (root -> left == nullptr) return root;
+BNode<T>** leftmostNode(BNode<T> *&root) {
+    if (root -> left == nullptr) return &root;
     return leftmostNode(root -> left);
 }
 
