@@ -16,21 +16,17 @@
 #include "BNode.hpp"
 
 template <class T>
-BNode<T>* leftmostLeaf(BNode<T> *root) {
-    if (root -> left == nullptr && root -> right == nullptr) return root;
+BNode<T>** leftmostLeaf(BNode<T> *&root) {
+    if (root -> left == nullptr && root -> right == nullptr) return &root;
     if (root -> left != nullptr) return leftmostLeaf(root -> left);
     else return leftmostLeaf(root -> right);
 }
 
 template <class T>
 void deleteLeftmostLeaf(BNode<T> *&root) {
-    bool isLeft = (leftmostLeaf(root) == leftmostLeaf(root) -> up -> left); // ???: Можно ли сократить количество вызовов функции leftmostLeaf()?
-    delete leftmostLeaf(root);
-    if (isLeft) {
-        leftmostLeaf(root) -> up -> left = nullptr;
-    } else {
-        leftmostLeaf(root) -> up -> right = nullptr;
-    }
+    BNode<T> **t = leftmostLeaf(root); //Take the address of the leftmost leaf
+    delete *t;
+    *t = nullptr;
 }
 
 #endif /* Problem15_hpp */

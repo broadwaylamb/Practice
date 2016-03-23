@@ -18,11 +18,12 @@
 
 template <class T>
 void deleteLeftmostNode(BNode<T> *&root) {
-    BNode<T> *t1 = leftmostNode(root) -> up;
-    BNode<T> *t2 = t1 -> left -> right;
-    t1 -> left -> right -> up = t1;
-    delete leftmostNode(root);
-    leftmostNode(root) -> up -> left = t2; // ???: Есть ли другой способ?
+    BNode<T> **t = leftmostNode(root);
+    BNode<T> *t1 = (*t) -> up;
+    BNode<T> *t2 = (*t) -> right;
+    (*t) -> right -> up = t1;
+    delete *t;
+    (*t) = t2;
 }
 
 #endif /* Problem14_hpp */
