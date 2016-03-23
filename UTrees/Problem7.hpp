@@ -22,11 +22,11 @@ void swapRootAndLeftChild(BNode<T> *&root) {
     BNode<T> *t3 = root -> right;
     BNode<T> *t4 = root -> left -> left;
     BNode<T> *t5 = root -> left -> right;
-    root = t2;
-    root -> left = t1;
-    root -> right = t3;
-    root -> left -> left = t4;
-    root -> left -> right = t5;
+    root = t2;                  root -> up = t1 -> up;
+    root -> left = t1;          root -> left -> up = root;
+    root -> right = t3;         root -> right -> up = root;
+    root -> left -> left = t4;  root -> left -> left -> up = root -> left;
+    root -> left -> right = t5; root -> left -> right -> up = root -> left;
 }
 
 #endif /* Problem7_hpp */

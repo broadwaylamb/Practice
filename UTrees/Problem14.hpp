@@ -14,20 +14,15 @@
 #define Problem14_hpp
 
 #include "BNode.hpp"
-
-template <class T>
-BNode<T>* leftmostNodeParent(BNode<T> *root) {
-    if (root -> left -> left == nullptr) return root;
-    return leftmostNodeParent(root -> left);
-}
+#include "Problem13.hpp"
 
 template <class T>
 void deleteLeftmostNode(BNode<T> *&root) {
-    BNode<T> *t1 = leftmostNodeParent(root);
-    BNode<T> *t2 = t1 -> left;
-    BNode<T> *t3 = t2 -> right;
-    delete leftmostNodeParent(root) -> left;
-    leftmostNodeParent(root) -> left = t3;
+    BNode<T> *t1 = leftmostNode(root) -> up;
+    BNode<T> *t2 = t1 -> left -> right;
+    t1 -> left -> right -> up = t1;
+    delete leftmostNode(root);
+    leftmostNode(root) -> up -> left = t2; // ???: Есть ли другой способ?
 }
 
 #endif /* Problem14_hpp */

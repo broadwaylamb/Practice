@@ -16,8 +16,16 @@
 #include "BNode.hpp"
 
 template <class T>
+BNode<T>* leftmostNode(BNode<T> *root) {
+    if (root -> left == nullptr) return root;
+    return leftmostNode(root -> left);
+}
+
+template <class T>
 void insertLeftChildForLeftmostNode(BNode<T> *&root, T data) {
-    leftmostNode(root) -> left = new BNode<T>(data);
+    BNode<T> *t = new BNode<T>(data);
+    t -> up = leftmostNode(root);
+    leftmostNode(root) -> left = t;
 }
 
 #endif /* Problem13_hpp */
