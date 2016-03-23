@@ -39,36 +39,40 @@ void performTest(int problemNumber) {
             problemFooter();
             break;
         }
-//        case 4: {
-//            problemHeader(problemNumber);
-//            
-//            BNode<int> *tree = new BNode<int>(1,
-//                                              new BNode<int>(2,
-//                                                             new BNode<int>(3),
-//                                                             new BNode<int>(4)));
-//            replaceRootWithLeftSon(tree);
-//            printTree(tree);
-//            insertNewRootWithData(tree, 1);
-//            cout<<endl<<"The new tree:"<<endl<<endl;
-//            printTree(tree);
-//            
-//            problemFooter();
-//            break;
-//        }
-//        case 5: {
-//            problemHeader(problemNumber);
-//            
-//            BNode<int> *tree = new BNode<int>(1,
-//                                              new BNode<int>(2),
-//                                              new BNode<int>(3));
-//            printTree(tree);
-//            insertLeftChildBetween(tree, 4);
-//            cout<<endl<<"The new tree:"<<endl<<endl;
-//            printTree(tree);
-//            
-//            problemFooter();
-//            break;
-//        }
+        case 4: {
+            problemHeader(problemNumber);
+            
+            BNode<int> *tree = new BNode<int>(1,
+                                              new BNode<int>(2,
+                                                             new BNode<int>(3),
+                                                             new BNode<int>(4)));
+            replaceRootWithLeftSon(tree);
+            printTree(tree);
+            
+            insertNewRootWithData(tree, 1);
+            
+            cout<<endl<<"The new tree:"<<endl<<endl;
+            printTree(tree);
+            
+            problemFooter();
+            break;
+        }
+        case 5: {
+            problemHeader(problemNumber);
+            
+            BNode<int> *tree = new BNode<int>(1,
+                                              new BNode<int>(2),
+                                              new BNode<int>(3));
+            printTree(tree);
+            
+            insertLeftChildBetween(tree, 4);
+            
+            cout<<endl<<"The new tree:"<<endl<<endl;
+            printTree(tree);
+            
+            problemFooter();
+            break;
+        }
 //        case 6: {
 //            problemHeader(problemNumber);
 //            

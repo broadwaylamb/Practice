@@ -18,6 +18,7 @@
 template <class T>
 void insertLeftChildBetween(BNode<T> *&root, T data) {
     root -> left = new BNode<T>(data, root -> left);
+    root -> left -> up = root;
 }
 
 #endif /* Problem5_hpp */
