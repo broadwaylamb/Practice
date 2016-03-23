@@ -287,6 +287,36 @@ void performTest(int problemNumber) {
             problemFooter();
             break;
         }
+        case 15: {
+            problemHeader(problemNumber);
+            
+            BNode<int> *tree = new BNode<int>(1,
+                                              new BNode<int>(2,
+                                                             new BNode<int>(3),
+                                                             new BNode<int>(4)),
+                                              new BNode<int>(5,
+                                                             new BNode<int>(6,
+                                                                            new BNode<int>(7),
+                                                                            new BNode<int>(10,
+                                                                                           new BNode<int>(11),
+                                                                                           new BNode<int>(12))),
+                                                             new BNode<int>(8,
+                                                                            new BNode<int>(8),
+                                                                            new BNode<int>(9))));
+            
+            printTree(tree);
+            
+            cout<<"The leftmost leaf is: "<<leftmostLeaf(tree) -> data<<endl;
+            
+            deleteLeftmostLeaf(tree);
+            
+            cout<<endl<<"The new tree:"<<endl<<endl;
+            
+            printTree(tree);
+            
+            problemFooter();
+            break;
+        }
         default:
             cout<<"No such problem"<<endl;
             break;

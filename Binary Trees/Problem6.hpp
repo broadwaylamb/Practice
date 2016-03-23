@@ -16,7 +16,7 @@
 #include "BNode.hpp"
 
 template <class T>
-void insertLeftChildAsAdopter(BNode<T> *root, T data) {
+void insertLeftChildAsAdopter(BNode<T> *&root, T data) {
     root -> left = new BNode<T>(data, root -> left, root -> right);
     root -> right = nullptr;
 }

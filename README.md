@@ -11,7 +11,8 @@
 
 | Завершено | Тема | Каталог с кодом решений |
 | :-------: | :--: | :---------------------: |
-| 14/17 | Двоичные деревья | [`Binary Trees`](https://github.com/broadwaylamb/Practice/tree/btrees/Binary%20Trees) |
+| 15/15 | Двоичные деревья | [`Binary Trees`](https://github.com/broadwaylamb/Practice/tree/btrees/Binary%20Trees) |
+| 0/9  | U-деревья | 
 | 0/9  | Деревья с произвольным числом <br>сыновей у каждого узла | — |
 | 0/20 | Обход дерева | — |
 

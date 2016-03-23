@@ -16,7 +16,7 @@
 #include "BNode.hpp"
 
 template <class T>
-void insertLeftChildBetween(BNode<T> *root, T data) {
+void insertLeftChildBetween(BNode<T> *&root, T data) {
     root -> left = new BNode<T>(data, root -> left);
 }
 

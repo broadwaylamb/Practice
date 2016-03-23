@@ -17,7 +17,7 @@
 #include "Problem9.hpp"
 
 template <class T>
-void insertLeftChildForLeftmostNode(BNode<T> *root, T data) {
+void insertLeftChildForLeftmostNode(BNode<T> *&root, T data) {
     leftmostNode(root) -> left = new BNode<T>(data);
 }
 
