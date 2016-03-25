@@ -16,13 +16,14 @@
 #include "ANode.hpp"
 
 template <class T>
-ANode<T>** last3(ANode<T> *root) {
+ANode<T>** last3(ANode<T> *&root) {
     int n = count(root);
     ANode<T> *t = root -> down;
     while (n > 3) {
         n--;
         t = root -> right;
     }
+    return &t;
 }
 
 #endif /* Problem3_hpp */
