@@ -18,6 +18,7 @@
 
 template <class T>
 void insertLeftChildForLeftmostNode(BNode<T> *&root, T data) {
+    if (root == nullptr) return;
     (*leftmostNode(root)) -> left = new BNode<T>(data);
 }
 

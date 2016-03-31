@@ -17,6 +17,7 @@
 
 template <class T>
 void insertLeftChildBetween(BNode<T> *&root, T data) {
+    if (root == nullptr) return;
     root -> left = new BNode<T>(data, root -> left);
     root -> left -> up = root;
 }

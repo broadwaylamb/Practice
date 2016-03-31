@@ -17,7 +17,7 @@ int main() {
     int n = 0;
     
     while (true) {
-        cout<<"Enter a number of the problem you want to test:"<<endl;
+        cout<<"Enter the number of the problem you want to test:"<<endl;
         cin>>input;
         try {
             n = stoi(input);

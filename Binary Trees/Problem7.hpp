@@ -17,6 +17,7 @@
 
 template <class T>
 void swapRootAndLeftChild(BNode<T> *&root) {
+    if (root == nullptr || root -> left == nullptr) return;
     BNode<T> *t1 = root;
     BNode<T> *t2 = root -> left;
     BNode<T> *t3 = root -> right;

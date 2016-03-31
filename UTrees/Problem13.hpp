@@ -17,12 +17,14 @@
 
 template <class T>
 BNode<T>** leftmostNode(BNode<T> *&root) {
+    if (root == nullptr) return &root;
     if (root -> left == nullptr) return &root;
     return leftmostNode(root -> left);
 }
 
 template <class T>
 void insertLeftChildForLeftmostNode(BNode<T> *&root, T data) {
+    if (root == nullptr) return;
     BNode<T> **t = leftmostNode(root);
     (*t) -> left = new BNode<T>(data);
     (*t) -> left -> up = *t;

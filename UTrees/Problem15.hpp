@@ -17,6 +17,7 @@
 
 template <class T>
 BNode<T>** leftmostLeaf(BNode<T> *&root) {
+    if (root == nullptr) return &root;
     if (root -> left == nullptr && root -> right == nullptr) return &root;
     if (root -> left != nullptr) return leftmostLeaf(root -> left);
     else return leftmostLeaf(root -> right);
@@ -24,7 +25,8 @@ BNode<T>** leftmostLeaf(BNode<T> *&root) {
 
 template <class T>
 void deleteLeftmostLeaf(BNode<T> *&root) {
-    BNode<T> **t = leftmostLeaf(root); //Take the address of the leftmost leaf
+    if (root == nullptr) return;
+    BNode<T> **t = leftmostLeaf(root);
     delete *t;
     *t = nullptr;
 }

@@ -17,6 +17,7 @@
 
 template <class T>
 BNode<T>* stepRightStepLeft(BNode<T> *root, bool right = true) {
+    if (root == nullptr) return nullptr;
     if(right)
         if(root -> right == nullptr) return root;
         else return stepRightStepLeft(root -> right, false);

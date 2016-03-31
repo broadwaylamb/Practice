@@ -14,14 +14,24 @@
 #define Problem12_hpp
 
 #include "BNode.hpp"
+#include "Problem11.hpp"
 
 template <class T>
-BNode<T>* secondFromLeftLeaf(BNode<T> *root) {
-    if(root -> left -> left == nullptr && root -> left -> right == nullptr
-       && root -> right -> left == nullptr && root -> right -> left == nullptr)
-        return root -> right;
-    if (root -> left != nullptr) return secondFromLeftLeaf(root -> left);
-    else return secondFromLeftLeaf(root -> right);
+static void findFork(BNode<T> *root, BNode<T> *&fork) {
+    if (root == nullptr) return;
+    if (root -> left != nullptr && root -> right != nullptr) {
+        fork = root;
+        findFork(root -> left, fork);
+    }
+}
+
+
+template <class T>
+BNode<T>** secondFromLeftLeaf(BNode<T> *&root) {
+    if (root == nullptr) return &root;
+    BNode<T> *fork = nullptr;
+    findFork(root, fork);
+    return leftmostLeaf(fork -> right);
 }
 
 #endif /* Problem12_hpp */

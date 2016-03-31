@@ -18,7 +18,6 @@ static void problemFooter() {
     cout<<endl<<"--------"<<endl<<endl;
 }
 
-// ???: Почему память под деревья выделяется заранее?
 
 void performTest(int problemNumber) {
     switch (problemNumber) {
@@ -162,11 +161,11 @@ void performTest(int problemNumber) {
                                                                                               new BNode<int>(6))),
                                                              new BNode<int>(7)),
                                               new BNode<int>(8));
-            
+
             printTree(tree);
             
             cout<<endl<<"The leftmost node of the tree is: "<<(*leftmostNode(tree)) -> data<<endl;
-            cout<<(*leftmostNode(tree)) -> right -> data<<endl;
+
             
             deleteLeftmostNode(tree);
             
@@ -182,7 +181,7 @@ void performTest(int problemNumber) {
             
             BNode<int> *tree = new BNode<int>(1,
                                               new BNode<int>(2,
-                                                             new BNode<int>(3),
+                                                             nullptr,
                                                              new BNode<int>(4)),
                                               new BNode<int>(5,
                                                              new BNode<int>(6,

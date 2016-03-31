@@ -17,12 +17,19 @@
 
 template <class T>
 BNode<T>** leftmostNodeParent(BNode<T> *&root) {
+    if (root == nullptr || root -> left == nullptr) return &root;
     if (root -> left -> left == nullptr) return &root;
     return leftmostNodeParent(root -> left);
 }
 
 template <class T>
 void deleteLeftmostNode(BNode<T> *&root) {
+    if (root == nullptr) return;
+    if (root -> left == nullptr) {
+        delete root;
+        root = root -> right;
+        return;
+    }
     BNode<T> **t1 = leftmostNodeParent(root);
     BNode<T> *t2 = (*t1) -> left;
     BNode<T> *t3 = t2 -> right;

@@ -17,6 +17,7 @@
 
 template <class T>
 BNode<T>** leftmostNode(BNode<T> *&root) {
+    if (root == nullptr) return &root;
     if (root -> left == nullptr) return &root;
     return leftmostNode(root -> left);
 }
