@@ -60,6 +60,9 @@
 		873496941C92FC7C00457A3D /* Problem3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem3.hpp; sourceTree = "<group>"; };
 		873496971C92FE1700457A3D /* Problem4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem4.hpp; sourceTree = "<group>"; };
 		87406E6C1CAEA6860083ECB8 /* ANode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ANode.hpp; sourceTree = "<group>"; };
+		87406E6E1CAEA9550083ECB8 /* Problem1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem1.hpp; sourceTree = "<group>"; };
+		87406E711CAEAFA20083ECB8 /* Problem2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem2.hpp; sourceTree = "<group>"; };
+		87406E741CAEB5520083ECB8 /* Problem3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem3.hpp; sourceTree = "<group>"; };
 		8761D91C1CAEA0D700A3D15F /* ATrees */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ATrees; sourceTree = BUILT_PRODUCTS_DIR; };
 		8761D91E1CAEA0D700A3D15F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8761D9241CAEA28A00A3D15F /* PerformTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerformTest.cpp; sourceTree = "<group>"; };
@@ -159,6 +162,9 @@
 				87406E6C1CAEA6860083ECB8 /* ANode.hpp */,
 				8761D9241CAEA28A00A3D15F /* PerformTest.cpp */,
 				8761D9251CAEA28A00A3D15F /* PerformTest.hpp */,
+				87406E6E1CAEA9550083ECB8 /* Problem1.hpp */,
+				87406E711CAEAFA20083ECB8 /* Problem2.hpp */,
+				87406E741CAEB5520083ECB8 /* Problem3.hpp */,
 			);
 			path = ATrees;
 			sourceTree = "<group>";

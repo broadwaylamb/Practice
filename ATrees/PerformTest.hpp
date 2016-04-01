@@ -10,6 +10,9 @@
 #define PerformTest_hpp
 
 #include "ANode.hpp"
+#include "Problem1.hpp"
+#include "Problem2.hpp"
+#include "Problem3.hpp"
 
 void performTest(int problemNumber);
 

@@ -29,7 +29,7 @@ void printTree(ANode<T> *root, int offset = 0) {
 }
 
 template<class T>
-int count(ANode<T> *root) {
+int countChildren(ANode<T> *root) {
     int c = 0;
     if(root == nullptr) return c;
     root = root -> down;

@@ -18,7 +18,7 @@
 #define Problem2_hpp
 
 template <class T>
-int countGrandchildren(BNode<T> *root) {
+int countGrandChildren(BNode<T> *root) {
     int n = 0;
     if (root == nullptr) return n;
     if (root -> left != nullptr)

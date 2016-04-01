@@ -46,7 +46,7 @@ void performTest(int problemNumber) {
                                               new BNode<int>(3,
                                                              new BNode<int>(6)));
             printTree(tree);
-            cout<<endl<<"The number of grandchildren of the root is: "<<countGrandchildren(tree);
+            cout<<endl<<"The number of grandchildren of the root is: "<<countGrandChildren(tree);
             
             problemFooter();
             break;
