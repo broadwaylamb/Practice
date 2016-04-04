@@ -1,1 +1,16 @@
 language: cpp
+compiler:
+- clang
+os:
+- osx
+ruby: 2.2.0
+before_install:
+- echo $LANG
+- echo $LC_ALL
+- brew update && brew install llvm35 && brew link --force llvm35; fi
+- gem update --system
+- gem --version
+before_script:
+- travis_retry bundle
+- ./configure
+script: rake ci
