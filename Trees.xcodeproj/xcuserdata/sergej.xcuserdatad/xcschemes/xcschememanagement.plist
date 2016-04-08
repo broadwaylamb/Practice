@@ -12,17 +12,27 @@
 		<key>Binary Trees.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+		<key>Test2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>UTrees.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>8734967B1C92F29C00457A3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>875CEC001CB7889D00BCFAD7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
