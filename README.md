@@ -15,4 +15,5 @@
 | 9/9  | U-деревья | [`UTrees`](https://github.com/broadwaylamb/Practice/tree/master/UTrees)
 | 9/9  | Деревья с произвольным числом <br>сыновей у каждого узла | [`ATrees`](https://github.com/broadwaylamb/Practice/tree/master/ATrees) |
 | 3/20 | Обход дерева | [`Traversal`](https://github.com/broadwaylamb/Practice/tree/binarytrees/Traversal) |
-| 4/10 | Деревья поразрядного поиска | (https://github.com/broadwaylamb/Practice/tree/Search%20Trees/)
+| 4/10 | Деревья поразрядного поиска | [`Search Trees`](https://github.com/broadwaylamb/Practice/tree/searchtrees/Search%20Trees) |
+| 1/11 | Двоичные деревья поиска | [`Binary Search Trees`](https://github.com/broadwaylamb/Practice/tree/Binary%20Search%20Trees) |

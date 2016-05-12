@@ -12,6 +12,7 @@
 // Problem 1
 template <class T>
 class DSNode {
+public:
     int key;
     T data;
     DSNode<T> *left, *right;

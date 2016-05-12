@@ -18,7 +18,6 @@ static void problemFooter() {
     cout<<endl<<"--------"<<endl<<endl;
 }
 
-
 void performTest(int problemNumber) {
     switch (problemNumber) {
         case 0: {
@@ -32,6 +31,49 @@ void performTest(int problemNumber) {
             
             problemFooter();
             break;
+        }
+        case 4: {
+            problemHeader(4);
+            
+            
+            int numberArray[] = {1, 2, 3, 4, 5};
+            cout<<"Given a number array: "<<endl;
+            
+            DSTree<int> tree = DSTree<int>();
+            
+            for (int i = 0; i < 5; i++) {
+                cout<<numberArray[i]<<" "<<endl;
+                tree.insert(i+1, numberArray[i]);
+            }
+            
+            tree.print();
+            
+            problemFooter();
+            
+            break;
+        }
+        case 5: {
+            problemHeader(5);
+            
+            int numberArray[] = {1, 2, 3, 4, 5};
+            cout<<"Given a number array: "<<endl;
+            
+            DSTree<int> tree = DSTree<int>();
+            
+            for (int i = 0; i < 5; i++) {
+                cout<<numberArray[i]<<" ";
+                tree.insert(i+1, numberArray[i]);
+            }
+            cout<<endl;
+            tree.print();
+            
+            tree.del(1);
+            
+            cout<<"The new tree:"<<endl<<endl;
+            
+            tree.print();
+            
+            problemFooter();
         }
         default:
             cout<<"No such problem"<<endl;

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		87AB693B1CDCC9AA005254BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87AB693A1CDCC9AA005254BD /* main.cpp */; };
 		87AB69461CDCCCA0005254BD /* PerformTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87AB69441CDCCCA0005254BD /* PerformTest.cpp */; };
+		87FD45451CE52DD500984269 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87FD45441CE52DD500984269 /* main.cpp */; };
+		87FD454B1CE5317A00984269 /* PerformTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87FD45491CE5317A00984269 /* PerformTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -21,20 +23,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		87FD45401CE52DD500984269 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		87AB69371CDCC9AA005254BD /* Search Trees */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Search Trees"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87AB69371CDCC9AA005254BD /* Bitwise Search Trees */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Bitwise Search Trees"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AB693A1CDCC9AA005254BD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		87AB69421CDCC9DB005254BD /* Problem0.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Problem0.hpp; sourceTree = "<group>"; };
 		87AB69441CDCCCA0005254BD /* PerformTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerformTest.cpp; sourceTree = "<group>"; };
 		87AB69451CDCCCA0005254BD /* PerformTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PerformTest.hpp; sourceTree = "<group>"; };
 		87AB694A1CDCD172005254BD /* DSNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DSNode.hpp; sourceTree = "<group>"; };
 		87AB694D1CDCD1F4005254BD /* DSTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DSTree.hpp; sourceTree = "<group>"; };
+		87FD45421CE52DD500984269 /* Binary Search Trees */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Binary Search Trees"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87FD45441CE52DD500984269 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		87FD45491CE5317A00984269 /* PerformTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerformTest.cpp; sourceTree = "<group>"; };
+		87FD454A1CE5317A00984269 /* PerformTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PerformTest.hpp; sourceTree = "<group>"; };
+		87FD454D1CE531BF00984269 /* BSNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BSNode.hpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		87FD45501CE5320100984269 /* BSTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BSTree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		87AB69341CDCC9AA005254BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FD453F1CE52DD500984269 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,7 +71,8 @@
 		87AB692E1CDCC9AA005254BD = {
 			isa = PBXGroup;
 			children = (
-				87AB69391CDCC9AA005254BD /* Search Trees */,
+				87AB69391CDCC9AA005254BD /* Bitwise */,
+				87FD45431CE52DD500984269 /* Binary Search Trees */,
 				87AB69381CDCC9AA005254BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,12 +80,13 @@
 		87AB69381CDCC9AA005254BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87AB69371CDCC9AA005254BD /* Search Trees */,
+				87AB69371CDCC9AA005254BD /* Bitwise Search Trees */,
+				87FD45421CE52DD500984269 /* Binary Search Trees */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		87AB69391CDCC9AA005254BD /* Search Trees */ = {
+		87AB69391CDCC9AA005254BD /* Bitwise */ = {
 			isa = PBXGroup;
 			children = (
 				87AB693A1CDCC9AA005254BD /* main.cpp */,
@@ -70,15 +96,28 @@
 				87AB694D1CDCD1F4005254BD /* DSTree.hpp */,
 				87AB69421CDCC9DB005254BD /* Problem0.hpp */,
 			);
+			name = Bitwise;
 			path = "Search Trees";
+			sourceTree = "<group>";
+		};
+		87FD45431CE52DD500984269 /* Binary Search Trees */ = {
+			isa = PBXGroup;
+			children = (
+				87FD45441CE52DD500984269 /* main.cpp */,
+				87FD45491CE5317A00984269 /* PerformTest.cpp */,
+				87FD454A1CE5317A00984269 /* PerformTest.hpp */,
+				87FD454D1CE531BF00984269 /* BSNode.hpp */,
+				87FD45501CE5320100984269 /* BSTree.hpp */,
+			);
+			path = "Binary Search Trees";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		87AB69361CDCC9AA005254BD /* Search Trees */ = {
+		87AB69361CDCC9AA005254BD /* Bitwise Search Trees */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87AB693E1CDCC9AA005254BD /* Build configuration list for PBXNativeTarget "Search Trees" */;
+			buildConfigurationList = 87AB693E1CDCC9AA005254BD /* Build configuration list for PBXNativeTarget "Bitwise Search Trees" */;
 			buildPhases = (
 				87AB69331CDCC9AA005254BD /* Sources */,
 				87AB69341CDCC9AA005254BD /* Frameworks */,
@@ -88,9 +127,26 @@
 			);
 			dependencies = (
 			);
-			name = "Search Trees";
+			name = "Bitwise Search Trees";
 			productName = "Search Trees";
-			productReference = 87AB69371CDCC9AA005254BD /* Search Trees */;
+			productReference = 87AB69371CDCC9AA005254BD /* Bitwise Search Trees */;
+			productType = "com.apple.product-type.tool";
+		};
+		87FD45411CE52DD500984269 /* Binary Search Trees */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87FD45461CE52DD500984269 /* Build configuration list for PBXNativeTarget "Binary Search Trees" */;
+			buildPhases = (
+				87FD453E1CE52DD500984269 /* Sources */,
+				87FD453F1CE52DD500984269 /* Frameworks */,
+				87FD45401CE52DD500984269 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Binary Search Trees";
+			productName = "Binary Search Trees";
+			productReference = 87FD45421CE52DD500984269 /* Binary Search Trees */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -103,6 +159,9 @@
 				ORGANIZATIONNAME = "Sergej Jaskiewicz";
 				TargetAttributes = {
 					87AB69361CDCC9AA005254BD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					87FD45411CE52DD500984269 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -119,7 +178,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87AB69361CDCC9AA005254BD /* Search Trees */,
+				87AB69361CDCC9AA005254BD /* Bitwise Search Trees */,
+				87FD45411CE52DD500984269 /* Binary Search Trees */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +191,15 @@
 			files = (
 				87AB693B1CDCC9AA005254BD /* main.cpp in Sources */,
 				87AB69461CDCCCA0005254BD /* PerformTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FD453E1CE52DD500984269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87FD45451CE52DD500984269 /* main.cpp in Sources */,
+				87FD454B1CE5317A00984269 /* PerformTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +303,20 @@
 			};
 			name = Release;
 		};
+		87FD45471CE52DD500984269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87FD45481CE52DD500984269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -246,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87AB693E1CDCC9AA005254BD /* Build configuration list for PBXNativeTarget "Search Trees" */ = {
+		87AB693E1CDCC9AA005254BD /* Build configuration list for PBXNativeTarget "Bitwise Search Trees" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87AB693F1CDCC9AA005254BD /* Debug */,
@@ -254,6 +337,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		87FD45461CE52DD500984269 /* Build configuration list for PBXNativeTarget "Binary Search Trees" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87FD45471CE52DD500984269 /* Debug */,
+				87FD45481CE52DD500984269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

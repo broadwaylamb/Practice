@@ -40,9 +40,9 @@ private:
         rPrint(root -> left, offset + 5);
     }
     
-    DSNode<T>* rSearch(DSNode<T> *root, int key, int level = 0) {
+    DSNode<T>** rSearch(DSNode<T> *&root, int key, int level = 0) {
         if (root == nullptr) return nullptr;
-        if (root -> key == key) return root;
+        if (root -> key == key) return &root;
         
         if (digit(key, level) == 0) {
             return rSearch(root -> left, key, level + 1);
@@ -52,7 +52,26 @@ private:
     }
     
     void rInsert(DSNode<T> *&root, int level, int key, T data) {
-        
+        if (root == nullptr) {
+            root = new DSNode<T>();
+            root -> key = key;
+            root -> data = data;
+            return;
+        }
+        if (root -> key == key) {
+            root -> data = data;
+        }
+        if (digit(key, level) == 0) {
+            rInsert(root -> left, level + 1, key, data);
+        } else {
+            rInsert(root -> right, level + 1, key, data);
+        }
+    }
+    
+    DSNode<T>** leftmostLeaf(DSNode<T> *&root) {
+        if (root == nullptr) return nullptr;
+        if (root -> left == nullptr) return &root;
+        else return leftmostLeaf(root -> left);
     }
     
 public:
@@ -68,12 +87,29 @@ public:
         rPrint(root);
     }
     
+    // Problem 4
     DSNode<T>* search(int key) {
         return rSearch(root, key);
     }
     
+    // Problem 4
     void insert(int key, T data) {
         rInsert(root, 0, key, data);
+    }
+    
+    // Problem 5
+    void del(int key) {
+        DSNode<T> **nodeToDelete = rSearch(root, key);
+        if ((*nodeToDelete) -> left == nullptr && (*nodeToDelete) -> right == nullptr) {
+            delete *nodeToDelete;
+            *nodeToDelete = nullptr;
+            return;
+        }
+        
+        DSNode<T> **leaf = leftmostLeaf(root);
+        (*nodeToDelete) -> data = (*leaf) -> data;
+        delete *leaf;
+        *leaf = nullptr;
     }
 };
 
