@@ -3,7 +3,7 @@
 
 ## Использование
 
-Пакеты с расширением `.xcodeproj` — стандартные файлы проектов среды Xcode для OS X. Сами исходные коды находятся в соответствующем каталоге. 
+Пакеты с расширением `.xcodeproj` — стандартные файлы проектов среды Xcode для OS X. Сами исходные коды находятся в соответствующем каталоге.
 
 ## Задания
 
@@ -15,4 +15,4 @@
 | 9/9  | U-деревья | [`UTrees`](https://github.com/broadwaylamb/Practice/tree/master/UTrees)
 | 9/9  | Деревья с произвольным числом <br>сыновей у каждого узла | [`ATrees`](https://github.com/broadwaylamb/Practice/tree/master/ATrees) |
 | 3/20 | Обход дерева | [`Traversal`](https://github.com/broadwaylamb/Practice/tree/binarytrees/Traversal) |
-
+| 4/10 | Деревья поразрядного поиска | (https://github.com/broadwaylamb/Practice/tree/Search%20Trees/)
