@@ -17,7 +17,7 @@ class BSTree {
 private:
     BSNode<S, T>* root;
     
-    rDelete(BSNode<S, T> *&node) {
+    void rDelete(BSNode<S, T> *&node) {
         if (node == nullptr) {
             return;
         }
@@ -27,6 +27,12 @@ private:
         node = nullptr;
     }
     
+    BSNode<S, T>* leftmostNode(BSNode<S, T> *root) {
+        if (root == nullptr) return nullptr;
+        if (root -> left == nullptr) return root;
+        return leftmostNode(root -> left);
+    }
+    
 public:
     BSTree(): root(nullptr) {}
     
@@ -34,7 +40,19 @@ public:
         rDelete(root);
     }
     
-    
+    BSNode<S, T>* next(BSNode<S, T>* node) {
+        if (node == nullptr) {
+            return nullptr;
+        }
+        if (node -> right == nullptr) {
+            if (node -> up -> left == node) {
+                return node -> up;
+            } else {
+                return  nullptr;
+            }
+        }
+        return leftmostNode(node -> right);
+    }
 };
 
 #endif /* BSTree_hpp */

@@ -345,6 +345,7 @@
 				87FD45481CE52DD500984269 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

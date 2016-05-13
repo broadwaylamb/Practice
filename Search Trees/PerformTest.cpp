@@ -46,7 +46,7 @@ void performTest(int problemNumber) {
                 tree.insert(i+1, numberArray[i]);
             }
             
-            tree.print();
+            tree.print(true);
             
             problemFooter();
             
@@ -65,16 +65,17 @@ void performTest(int problemNumber) {
                 tree.insert(i+1, numberArray[i]);
             }
             cout<<endl;
-            tree.print();
+            tree.print(true);
             
             tree.del(1);
             
             cout<<"The new tree:"<<endl<<endl;
             
-            tree.print();
+            tree.print(true);
             
             problemFooter();
         }
+        
         default:
             cout<<"No such problem"<<endl;
             break;

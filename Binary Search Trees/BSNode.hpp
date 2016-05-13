@@ -15,6 +15,6 @@ class BSNode {
 public:
     S key;
     T data;
-    BSNode<S, T> *left, *right;
+    BSNode<S, T> *left, *right, *up;
 };
 #endif /* BSNode_hpp */

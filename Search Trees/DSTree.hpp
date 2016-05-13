@@ -18,7 +18,6 @@ template <class T>
 class DSTree {
     
 private:
-    DSNode<T> *root;
     
     void rDelete(DSNode<T> *&node) {
         if (node == nullptr) {
@@ -30,14 +29,16 @@ private:
         node = nullptr;
     }
     
-    void rPrint(DSNode<T> *root, int offset = 0) {
+    void rPrint(DSNode<T> *root, bool printKeys, int offset = 0) {
         if(root == nullptr) return;
-        rPrint(root -> right, offset + 5);
+        rPrint(root -> right, printKeys, offset + 5);
         for(int i = 0; i < offset; i++) std::cout<<" ";
+        if (printKeys) {
+            std::cout<<root -> key<<": ";
+        }
+        std::cout<<root -> data<<std::endl;
         
-        std::cout<<root -> key<<": "<<root -> data<<std::endl;
-        
-        rPrint(root -> left, offset + 5);
+        rPrint(root -> left, printKeys, offset + 5);
     }
     
     DSNode<T>** rSearch(DSNode<T> *&root, int key, int level = 0) {
@@ -74,7 +75,26 @@ private:
         else return leftmostLeaf(root -> left);
     }
     
+    bool rCheck(DSNode<T> *root, int level = 0) {
+        if (root == nullptr) {
+            return true;
+        }
+        if (root -> left == nullptr || root -> right == nullptr) {
+            return true;
+        }
+        if (digit(root -> left -> key, level) != 0) {
+            return false;
+        }
+        if (digit(root -> right -> key, level) != 1) {
+            return false;
+        }
+        bool leftCheck = rCheck(root -> left, level + 1);
+        bool rightCheck = rCheck(root -> right, level + 1);
+        return leftCheck && rightCheck;
+    }
+    
 public:
+    DSNode<T> *root;
     DSTree(): root(nullptr) {}
     
     ~DSTree() {
@@ -83,8 +103,8 @@ public:
     
     
     // Problem 3
-    void print() {
-        rPrint(root);
+    void print(bool printKeys) {
+        rPrint(root, printKeys);
     }
     
     // Problem 4
@@ -110,6 +130,11 @@ public:
         (*nodeToDelete) -> data = (*leaf) -> data;
         delete *leaf;
         *leaf = nullptr;
+    }
+    
+    // Test 1
+    bool check() {
+        return rCheck(root);
     }
 };
 

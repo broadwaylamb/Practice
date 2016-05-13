@@ -10,7 +10,8 @@
 #define PerformTest_hpp
 
 #include <iostream>
-
+#include "BSNode.hpp"
+#include "BSTree.hpp"
 
 void performTest(int problemNumber);
 
