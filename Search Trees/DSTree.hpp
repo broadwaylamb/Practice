@@ -52,20 +52,20 @@ private:
         }
     }
     
-    void rInsert(DSNode<T> *&root, int level, int key, T data) {
-        if (root == nullptr) {
-            root = new DSNode<T>();
-            root -> key = key;
-            root -> data = data;
+    void rInsert(DSNode<T> *&node, int level, int key, T data) {
+        if (node == nullptr) {
+            node = new DSNode<T>();
+            node -> key = key;
+            node -> data = data;
             return;
         }
-        if (root -> key == key) {
-            root -> data = data;
+        if (node -> key == key) {
+            node -> data = data;
         }
         if (digit(key, level) == 0) {
-            rInsert(root -> left, level + 1, key, data);
+            rInsert(node -> left, level + 1, key, data);
         } else {
-            rInsert(root -> right, level + 1, key, data);
+            rInsert(node -> right, level + 1, key, data);
         }
     }
     
@@ -73,24 +73,6 @@ private:
         if (root == nullptr) return nullptr;
         if (root -> left == nullptr) return &root;
         else return leftmostLeaf(root -> left);
-    }
-    
-    bool rCheck(DSNode<T> *root, int level = 0) {
-        if (root == nullptr) {
-            return true;
-        }
-        if (root -> left == nullptr || root -> right == nullptr) {
-            return true;
-        }
-        if (digit(root -> left -> key, level) != 0) {
-            return false;
-        }
-        if (digit(root -> right -> key, level) != 1) {
-            return false;
-        }
-        bool leftCheck = rCheck(root -> left, level + 1);
-        bool rightCheck = rCheck(root -> right, level + 1);
-        return leftCheck && rightCheck;
     }
     
 public:
@@ -117,7 +99,7 @@ public:
         rInsert(root, 0, key, data);
     }
     
-    // Problem 5
+//  =============== Задача 2-d1 =============================================================
     void del(int key) {
         DSNode<T> **nodeToDelete = rSearch(root, key);
         if ((*nodeToDelete) -> left == nullptr && (*nodeToDelete) -> right == nullptr) {
@@ -131,11 +113,7 @@ public:
         delete *leaf;
         *leaf = nullptr;
     }
-    
-    // Test 1
-    bool check() {
-        return rCheck(root);
-    }
+//  =========================================================================================
 };
 
 #endif /* DSTree_hpp */

@@ -33,6 +33,34 @@ private:
         return leftmostNode(root -> left);
     }
     
+    BSNode<S, T>* rSearch(BSNode<S, T> *&root, int key) {
+        if (root == nullptr) return nullptr;
+        if (root -> key == key) return root;
+        
+        if (key < root -> key) {
+            return rSearch(root -> left, key);
+        } else {
+            return rSearch(root -> right, key);
+        }
+    }
+    
+    void rInsert(BSNode<S, T> *node, S key, T data) {
+        if (node == nullptr) {
+            node = new BSNode<S, T>();
+            node -> key = key;
+            node -> data = data;
+            return;
+        }
+        if (node -> key == key) {
+            node -> data = data;
+        }
+        if (key < node -> key) {
+            rInsert(node -> left, key, data);
+        } else {
+            rInsert(node -> right, key, data);
+        }
+    }
+    
 public:
     BSTree(): root(nullptr) {}
     
@@ -40,19 +68,38 @@ public:
         rDelete(root);
     }
     
-    BSNode<S, T>* next(BSNode<S, T>* node) {
-        if (node == nullptr) {
-            return nullptr;
-        }
-        if (node -> right == nullptr) {
-            if (node -> up -> left == node) {
-                return node -> up;
-            } else {
-                return  nullptr;
-            }
-        }
-        return leftmostNode(node -> right);
+    BSNode<S, T>* search(S key) {
+        return rSearch(root, key);
     }
+    
+    void insert(S key, T data) {
+        rInsert(root, key, data);
+    }
+    
+//  =============== Задача 2-d2 ============================
+    void del(S key) {
+        BSNode<S, T> *nodeToDelete = search(key);
+        if (nodeToDelete == nullptr) {
+            return;
+        }
+        BSNode<S, T> *leftChild = nodeToDelete -> left;
+        BSNode<S, T> *rightChild = nodeToDelete -> right;
+        
+        delete nodeToDelete;
+        nodeToDelete = nullptr;
+        
+        if (leftChild != nullptr) {
+            insert(leftChild -> key, leftChild -> data);
+            delete leftChild;
+            leftChild = nullptr;
+        }
+        if (rightChild != nullptr) {
+            insert(rightChild -> key, rightChild -> data);
+            delete rightChild;
+            rightChild = nullptr;
+        }
+    }
+//  ========================================================
 };
 
 #endif /* BSTree_hpp */
