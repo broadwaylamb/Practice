@@ -25,6 +25,9 @@
 #include "Problem13.hpp"
 #include "Problem14.hpp"
 #include "Problem15.hpp"
+#include "Test_d1.hpp"
+#include "Test_d2.hpp"
+#include "Test_d4.hpp"
 
 void performTest(int problemNumber);
 

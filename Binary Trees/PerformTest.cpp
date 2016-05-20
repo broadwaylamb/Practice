@@ -316,6 +316,88 @@ void performTest(int problemNumber) {
             problemFooter();
             break;
         }
+        case 101: {
+            problemHeader(problemNumber);
+            
+            BNode<int> *tree = new BNode<int>(1,
+                                              new BNode<int>(2,
+                                                             new BNode<int>(3,
+                                                                            new BNode<int>(13,
+                                                                                           new BNode<int>(15)),
+                                                                            new BNode<int>(14)),
+                                                             new BNode<int>(4)),
+                                              new BNode<int>(5,
+                                                             new BNode<int>(6,
+                                                                            new BNode<int>(7),
+                                                                            new BNode<int>(10,
+                                                                                           new BNode<int>(11),
+                                                                                           new BNode<int>(12))),
+                                                             new BNode<int>(8,
+                                                                            new BNode<int>(8),
+                                                                            new BNode<int>(9))));
+            
+            printTree(tree);
+            
+            cout<<"The third from left node is: "<<left3(tree) -> data<<endl;
+            
+            problemFooter();
+            break;
+        }
+        case 102: {
+            problemHeader(problemNumber);
+            
+            BNode<int> *tree = new BNode<int>(1,
+                                              new BNode<int>(2,
+                                                             new BNode<int>(3,
+                                                                            new BNode<int>(13,
+                                                                                           new BNode<int>(15)),
+                                                                            new BNode<int>(14)),
+                                                             new BNode<int>(4)),
+                                              new BNode<int>(5,
+                                                             new BNode<int>(6,
+                                                                            new BNode<int>(7),
+                                                                            new BNode<int>(10,
+                                                                                           new BNode<int>(11),
+                                                                                           new BNode<int>(12))),
+                                                             new BNode<int>(8,
+                                                                            new BNode<int>(8),
+                                                                            new BNode<int>(9))));
+            
+            printTree(tree);
+            
+            chh(tree);
+            
+            cout<<endl<<"The new tree:"<<endl<<endl;
+            
+            printTree(tree);
+            
+            problemFooter();
+            break;
+        }
+        case 104: {
+            problemHeader(problemNumber);
+            
+            BNode<int> *tree = new BNode<int>(1,
+                                              new BNode<int>(2,
+                                                             new BNode<int>(3),
+                                                             new BNode<int>(4)),
+                                              new BNode<int>(5,
+                                                             new BNode<int>(6,
+                                                                            new BNode<int>(7),
+                                                                            new BNode<int>(10,
+                                                                                           new BNode<int>(11),
+                                                                                           new BNode<int>(12))),
+                                                             new BNode<int>(8,
+                                                                            new BNode<int>(8),
+                                                                            new BNode<int>(9))));
+            
+            printTree(tree);
+            
+            cout<<"The product is: "<<mult1(tree)<<endl;
+            
+            problemFooter();
+            break;
+        }
         default:
             cout<<"No such problem"<<endl;
             break;

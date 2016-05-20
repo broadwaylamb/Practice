@@ -19,6 +19,7 @@
 #include "Problem7.hpp"
 #include "Problem8.hpp"
 #include "Problem9.hpp"
+#include "Test_4.hpp"
 
 void performTest(int problemNumber);
 

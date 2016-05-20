@@ -350,6 +350,31 @@ void performTest(int problemNumber) {
             problemFooter();
             break;
         }
+        case 104: {
+            problemHeader(problemNumber);
+            
+            ANode<int> *tree = new ANode<int>(1,
+                                              new ANode<int>(2, nullptr,
+                                              new ANode<int>(3,
+                                                             new ANode<int>(8, nullptr,
+                                                             new ANode<int>(9)),
+                                              new ANode<int>(4,
+                                                             new ANode<int>(10, nullptr,
+                                                             new ANode<int>(11, nullptr,
+                                                             new ANode<int>(12, nullptr,
+                                                             new ANode<int>(13))))))));
+            
+            printTree(tree);
+            
+            move(tree);
+            
+            cout<<endl<<"The new tree:"<<endl<<endl;
+            
+            printTree(tree);
+            
+            problemFooter();
+            break;
+        }
         default:
             cout<<"No such problem"<<endl;
             break;
