@@ -75,31 +75,6 @@ public:
     void insert(S key, T data) {
         rInsert(root, key, data);
     }
-    
-//  =============== Задача 2-d2 ============================
-    void del(S key) {
-        BSNode<S, T> *nodeToDelete = search(key);
-        if (nodeToDelete == nullptr) {
-            return;
-        }
-        BSNode<S, T> *leftChild = nodeToDelete -> left;
-        BSNode<S, T> *rightChild = nodeToDelete -> right;
-        
-        delete nodeToDelete;
-        nodeToDelete = nullptr;
-        
-        if (leftChild != nullptr) {
-            insert(leftChild -> key, leftChild -> data);
-            delete leftChild;
-            leftChild = nullptr;
-        }
-        if (rightChild != nullptr) {
-            insert(rightChild -> key, rightChild -> data);
-            delete rightChild;
-            rightChild = nullptr;
-        }
-    }
-//  ========================================================
 };
 
 #endif /* BSTree_hpp */

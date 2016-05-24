@@ -70,9 +70,24 @@ private:
     }
     
     DSNode<T>** leftmostLeaf(DSNode<T> *&root) {
-        if (root == nullptr) return nullptr;
-        if (root -> left == nullptr) return &root;
-        else return leftmostLeaf(root -> left);
+        if (root == nullptr) return &root;
+        if (root -> left == nullptr && root -> right == nullptr) return &root;
+        if (root -> left != nullptr) return leftmostLeaf(root -> left);
+        else return leftmostLeaf(root -> right);
+    }
+    
+    void rNeg(DSNode<T> *root) {
+        if (root == nullptr) {
+            return;
+        }
+        root -> key = ~(root -> key);
+        
+        DSNode<T> *t = root -> left;
+        root -> left = root -> right;
+        root -> right = t;
+        
+        rNeg(root -> left);
+        rNeg(root -> right);
     }
     
 public:
@@ -83,23 +98,18 @@ public:
         rDelete(root);
     }
     
-    
-    // Problem 3
     void print(bool printKeys) {
         rPrint(root, printKeys);
     }
     
-    // Problem 4
     DSNode<T>* search(int key) {
         return rSearch(root, key);
     }
-    
-    // Problem 4
+
     void insert(int key, T data) {
         rInsert(root, 0, key, data);
     }
     
-//  =============== Задача 2-d1 =============================================================
     void del(int key) {
         DSNode<T> **nodeToDelete = rSearch(root, key);
         if ((*nodeToDelete) -> left == nullptr && (*nodeToDelete) -> right == nullptr) {
@@ -113,7 +123,10 @@ public:
         delete *leaf;
         *leaf = nullptr;
     }
-//  =========================================================================================
+    
+    void neg() {
+        rNeg(root);
+    }
 };
 
 #endif /* DSTree_hpp */
