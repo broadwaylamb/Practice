@@ -13,6 +13,7 @@
 #include "Problem0.hpp"
 #include "DSNode.hpp"
 #include "DSTree.hpp"
+#include "DoubleDSTree.hpp"
 
 void performTest(int problemNumber);
 

@@ -76,6 +76,27 @@ void performTest(int problemNumber) {
             
             break;
         }
+        case 102: {
+            problemHeader(102);
+            
+            
+            double numberArray[] = {1.0, -2.5, 0.01, 0.33, -9.1};
+            cout<<"Given a number array: "<<endl;
+            
+            DoubleDSTree<double> tree = DoubleDSTree<double>();
+            
+            for (int i = 0; i < 5; i++) {
+                cout<<numberArray[i]<<" "<<endl;
+                tree.insert(numberArray[i], numberArray[i]);
+            }
+            
+            cout<<endl<<endl;
+            tree.print(true);
+            
+            problemFooter();
+            
+            break;
+        }
         default:
             cout<<"No such problem"<<endl;
             break;

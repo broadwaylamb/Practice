@@ -42,6 +42,7 @@
 		87AB69451CDCCCA0005254BD /* PerformTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PerformTest.hpp; sourceTree = "<group>"; };
 		87AB694A1CDCD172005254BD /* DSNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DSNode.hpp; sourceTree = "<group>"; };
 		87AB694D1CDCD1F4005254BD /* DSTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DSTree.hpp; sourceTree = "<group>"; };
+		87EC049B1CF43614009D5637 /* DoubleDSTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DoubleDSTree.hpp; sourceTree = "<group>"; };
 		87FD45421CE52DD500984269 /* Binary Search Trees */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Binary Search Trees"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FD45441CE52DD500984269 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		87FD45491CE5317A00984269 /* PerformTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerformTest.cpp; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 				87AB69451CDCCCA0005254BD /* PerformTest.hpp */,
 				87AB694A1CDCD172005254BD /* DSNode.hpp */,
 				87AB694D1CDCD1F4005254BD /* DSTree.hpp */,
+				87EC049B1CF43614009D5637 /* DoubleDSTree.hpp */,
 				87AB69421CDCC9DB005254BD /* Problem0.hpp */,
 			);
 			name = Bitwise;

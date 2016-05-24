@@ -9,7 +9,6 @@
 #ifndef DSNode_hpp
 #define DSNode_hpp
 
-// Problem 1
 template <class T>
 class DSNode {
 public:
