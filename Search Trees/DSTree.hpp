@@ -127,6 +127,17 @@ public:
     void neg() {
         rNeg(root);
     }
+    
+    void delEven() {
+        if (root == nullptr) {
+            return;
+        }
+        rDelete(root -> left);
+        
+        if (root -> key % 2 == 0) {
+            del(root -> key);
+        }
+    }
 };
 
 #endif /* DSTree_hpp */
