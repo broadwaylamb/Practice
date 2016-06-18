@@ -1,3 +1,6 @@
+| Course Ended. |
+| :-----------: |
+
 # Practice
 Repository for storing and completing programming assignments.
 
